@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @entity.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @entity.amount %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @entity.group %>
+</p>
+
+
+<%= link_to 'Edit', edit_group_entity_path(@entity.group, @entity) %> |
+<%= link_to 'Back', group_entities_path(@entity.group) %>
