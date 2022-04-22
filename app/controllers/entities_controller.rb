@@ -1,7 +1,7 @@
 class EntitiesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_group
-  before_action :set_entity, only: [:show, :edit, :update, :destroy]
+  before_action :set_entity, only: %i[show edit update destroy]
 
   # GET groups/1/entities
   def index
@@ -9,8 +9,7 @@ class EntitiesController < ApplicationController
   end
 
   # GET groups/1/entities/1
-  def show
-  end
+  def show; end
 
   # GET groups/1/entities/new
   def new
@@ -18,8 +17,7 @@ class EntitiesController < ApplicationController
   end
 
   # GET groups/1/entities/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST groups/1/entities
   def create
@@ -49,17 +47,18 @@ class EntitiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_group
-      @group = current_user.groups.find(params[:group_id])
-    end
 
-    def set_entity
-      @entity = @group.entities.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_group
+    @group = current_user.groups.find(params[:group_id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def entity_params
-      params.require(:entity).permit(:name, :amount, :group_id)
-    end
+  def set_entity
+    @entity = @group.entities.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def entity_params
+    params.require(:entity).permit(:name, :amount, :group_id)
+  end
 end
