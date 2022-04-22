@@ -10,7 +10,7 @@ The Budget app is a mobile application, that helps you where to manage your budg
 - Bootstrap
 
 ## Live link 
-[live link](#)
+[live link](https://rails-budget-app.herokuapp.com/)
 
 ## video Demo
 
