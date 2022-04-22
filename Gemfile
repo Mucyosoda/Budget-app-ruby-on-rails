@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'ImageResize', '~> 0.0.5'
 gem 'nested_scaffold'
-
+gem 'rspec-rails', '~> 5.1', '>= 5.1.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
