@@ -10,11 +10,11 @@ The Budget app is a mobile application, that helps you where to manage your budg
 - Bootstrap
 
 ## Live link 
-[live link](https://rails-budget-app.herokuapp.com/)
+[live link](https://tranquil-ravine-94705.herokuapp.com/users/sign_in)
 
 ## video Demo
 
-[Demo Video link](https://www.loom.com/share/36d90116f976459fbb2e29b6cfaa3623)
+[Demo Video link](https://www.loom.com/share/2d1afeb973e842f5a7be86b609bd41ce)
 ## Getting Started
 
 **To get a local copy up and running follow these simple example steps:**
