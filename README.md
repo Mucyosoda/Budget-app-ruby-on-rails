@@ -10,7 +10,7 @@ The Budget app is a mobile application, that helps you where to manage your budg
 - Bootstrap
 
 ## Live link 
-[live link](https://tranquil-ravine-94705.herokuapp.com/users/sign_in)
+[live link](https://tranquil-ravine-9470.herokuapp.com/users/sign_in)
 
 ## video Demo
 
@@ -79,5 +79,8 @@ Contributions, issues, and feature requests are welcome!
 - Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
+- 
+- Credit of the design goes to [Creative Commons license.](https://www.behance.net/gregoirevella) The Original design idea by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
 
 - Microverse for giving us this chance

@@ -1,10 +1,20 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
-  resources :groups do
-    resources :entities
-  end
+  # get 'users/index'
+  # get 'users/new'
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root to: 'groups#index'
+  unauthenticated :user do
+    root to: "users#index"
+  end
+
+  authenticated :user do
+    root to: "categories#index", as: :authenticated_root
+  end
+  resources :categories do
+    resources :fundings
+  end
+
+  devise_scope  :user do
+    get 'users/sign_out' => 'devise/sessions#destroy'
+  end
+  
 end
