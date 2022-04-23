@@ -6,4 +6,3 @@ class Group < ApplicationRecord
     "#{name} #{description}"
   end
 end
-
