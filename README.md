@@ -59,7 +59,7 @@ The Budget app is a mobile application, that helps you where to manage your budg
 ```
 ### Usage
 
-To start recipe app you need to first `signup`
+To start recipe app you need to first `sign up`
 
 ## Author
 
